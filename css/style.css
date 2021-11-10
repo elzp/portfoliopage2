@@ -23,7 +23,8 @@ header {
     sans-serif; 
     position: relative;
     font-size: 10px;
-    margin-bottom: 1em;
+    padding-bottom: 80vw;
+    padding-top: 40px;
 }
 
 header p {
@@ -53,8 +54,9 @@ header button {
     sans-serif;
     font-weight: 300;
     font-size: 1.2em;
-    padding: 1.2em 1.2em;
+    padding: 0.5em 1.2em;
     margin-top: 1em;
+    margin-bottom: 1em;
     /* width: 32px; */
 }
 header button:hover {
@@ -62,11 +64,8 @@ header button:hover {
     color:  #111;
 
 }
-header div {
-    position: relative;
-    height: 90vw;
-}
-header div img {
+
+header img {
     /* display: block; */
     height: 80vw;
     position: absolute; 
@@ -331,4 +330,121 @@ footer {
     color: black;
     text-align: center;
     line-height: 4em;
+}
+
+@media (min-width: 800px){
+   
+header {
+    /* background-color: #29a6dc;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: 'Saira Condensed', 
+    sans-serif; 
+    position: relative;
+    font-size: 10px; */
+    padding-bottom: 0;
+    padding-top: 0;
+}
+header section {
+    position: relative;
+    top:0;
+    left:0;
+    padding: 12% 0 10% 5vw;
+    width:60vw;
+    text-align: left;
+    z-index: 13;
+    /* background-color: yellow; */
+}
+header p {
+    /* font-weight: 700;*/
+    font-size: 100px;
+    /* padding: 10vh auto;  */
+    z-index: 1;
+}
+
+header h1 {
+    /* font-weight: 700; */
+    font-size: 50px; 
+    padding: 5% auto 2%; 
+    z-index: 1;
+}
+
+header h2 {
+    /* font-weight: 400; */
+    font-size: 50px;
+    padding: 5% auto 2%; 
+    z-index: 1;
+    line-height: 50px;
+}
+header button {
+    /* border: 1px solid white;
+    color: white;
+    background-color: #29a6dc;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Saira', 
+    sans-serif;
+    font-weight: 300;  */
+    font-size: 24px;
+    padding: 0.5em 1.2em;
+    z-index: 0;
+    margin-top: 2em;
+    /* width: 32px; */
+}
+
+header img {
+    max-width: 55vw;
+    width: auto;
+    /* display: block; */
+    height: auto;
+    max-height: 100%;
+    /* position: absolute;  */
+    /* bottom:0; */
+    /* right: 0;  */
+    z-index: 0;
+}
+
+section.about {
+    color: black;
+    text-align: center;
+    padding:15%;
+}
+section.about div {
+    padding: 15px 0;
+}
+
+section.about img {
+    display: block;
+    width: 200px;
+    height: 120px;
+    margin: 20px auto;
+
+}
+section.about h1 {
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', 
+    sans-serif; 
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+section.about h2 {
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', 
+    sans-serif; 
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+section.about p{
+    font-family: 'Saira', 
+    sans-serif; 
+    position: relative;
+    font-weight: 300;
+    font-size: 12px;
+}
+
 }
