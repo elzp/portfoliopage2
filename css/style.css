@@ -238,6 +238,17 @@ section.contact {
     font-weight: 300;
     padding-top: 30px;
 }
+
+section.contact h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: 'Saira Condensed', 
+    sans-serif; 
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
 div.form {
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -254,15 +265,7 @@ div.form input {
     margin: 8px auto;
     color: rgba(0, 0, 0, 0.60)
 }
-div.form h2 {
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-family: 'Saira Condensed', 
-    sans-serif; 
-    font-weight: 700;
-    font-size: 24px;
-}
+
 div.form textarea {
     display: block;
     line-height: 36px;
@@ -624,6 +627,11 @@ section.hobby div {
     float: left;
 } 
 
+section.hobby div:last-child::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 section.hobby img {
     /* display: block; */
     width: 100%;
@@ -644,6 +652,119 @@ section.hobby p {
     font-weight: 300; */
     font-size: 4rem;
     /* color: white; */
+}
+
+
+
+section.contact {
+    /* background-color: #111;
+    font-family: 'Saira', 
+    sans-serif;
+    font-weight: 300;
+    padding-top: 30px; */
+    height: max-content;
+    font-size: 0;
+}
+
+section.contact h2 {
+    /* text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: 'Saira Condensed', 
+    sans-serif; 
+    font-weight: 700;
+    font-size: 24px; */
+    margin-bottom: 40px;
+    height:fit-content;
+}
+div.form {
+    /* font-size: 1.2em;
+    margin-bottom: 20px; */
+    margin: 2px 5% 20px 25%;
+    /* margin-left: 25%;
+    margin-right: 5%;
+    margin-top:2px; */
+    width:25%;
+    height: max-content;
+    float: left;
+}
+
+div.form input {
+    display: block;
+    font-family: 'Saira', 
+    sans-serif;
+    font-weight: 400;
+    line-height: 36px;
+    width: 90%;
+    padding: 0 auto;
+    margin: 8px auto;
+    color: rgba(0, 0, 0, 0.60)
+}
+
+div.form textarea {
+    /* display: block;
+    line-height: 36px;
+    width: 90%;
+    padding: 0 auto;
+    margin: 8px auto; */
+    min-height: 120px;
+    height: auto;
+}
+div.form button {
+    /* display: block;
+    border: 1px solid white;
+    color: white;
+    background-color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Saira', 
+    sans-serif;
+    font-weight: 400;
+    font-size: 14px; */
+    width: 90%;
+    /* line-height: 40px;
+    padding: 0 auto;
+    margin: 20px auto; */
+}
+div.socials {
+    /* margin: 12vw 0 0;
+    font-size:0;
+    background-color:  #111;
+    height:fit-content;
+    overflow: hidden;
+    padding-bottom: 20px; */
+    /* width:100vw; */
+    margin: 0 20% 0 5%;
+    width:30%;
+}
+div.socials div {
+    /* padding: 15px 40px; */
+    padding: 0 0 4%;
+}
+/* div.socials img {
+    width: 36px;
+    opacity: .8;
+    float: left;
+    margin-right: 18px;
+}
+
+div.socials img:hover {
+    opacity: 1;  
+} */
+div.socials p {
+    /* font-family: 'Saira', 
+    sans-serif; 
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    line-height: 36px; */
+    margin-bottom: 4%;
+    margin-top:2px;
+}
+div.socials p::after {
+    clear: both;
+    display: block;
+    content: "";
 }
 
 
