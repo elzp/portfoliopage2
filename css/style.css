@@ -14,6 +14,9 @@ body {
     max-width: 100vw;
 }
 
+a {
+    text-decoration: none;
+}
 header {
     background-color: #29a6dc;
     text-transform: uppercase;
