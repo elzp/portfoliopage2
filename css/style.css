@@ -181,7 +181,7 @@ section.projects p {
     font-weight: 400;
     font-size: 1.2rem;
     text-align: left;
-    padding: 0 2.5rem 3rem 2.5rem;
+    padding: 0 2.5rem 5rem 2.5rem;
 }
 
 section.motto { 
@@ -196,7 +196,7 @@ section.motto h2 {
     font-weight: 700;
     text-transform: uppercase;
     padding: 1.5em 0;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 section.motto p:nth-child(2) {
     font-family: 'Saira', sans-serif;
@@ -670,14 +670,17 @@ font-family: 'Saira Condensed', sans-serif;
     text-align: center;
     
 }
-
+section.projects div {
+    overflow: hidden;
+    height: min-content; 
+}
 section.projects>div:nth-child(even) {
     /* background-color: #ff4f2c; */
     margin-bottom: 40px;
     position: relative;
     overflow: hidden;
     margin: 0 10vw 40px;
-    min-height: 180.5px;
+    /* min-height: 180.5px; */
     width: auto;
     text-align: left;
 }
@@ -687,7 +690,7 @@ section.projects>div:nth-child(odd) {
     position: relative;
     overflow: hidden;
     margin: 0 10vw 40px;
-    min-height: 180.5px;
+    /* min-height: 180.5px; */
     width: auto;
     text-align: right;
 }
@@ -704,6 +707,7 @@ section.projects>div:last-child::after {
 section.projects img {
     width: 50%;
     height: auto;
+    z-index: 20;
 }
 
 section.projects>div:nth-child(odd) img {
@@ -711,29 +715,32 @@ section.projects>div:nth-child(odd) img {
     /* display: block; */
     /* width: 50%; */
     top: 0;
-    right: 0;
+    left: 50%;
     /* left: 50%; */
-    height: max-content;
+    /* height: max-content; */
     
 }
 section.projects>div>div {
     width:50%;
-    /* position: relative;
-    overflow: hidden; */
+    /* position: relative;*/
+    min-height: 180px;
+    overflow: hidden; 
+
 }
 section.projects>div:nth-child(even) img {
     position: absolute;
     /* display: block; */
     /* width: 50%; */
     top: 0;
-    left: 0;
+    right: 50%;
     /* right: 50%; */
-    height: auto;}
+    /* height: auto; */
+}
 
 
 section.projects h3 { 
     width: 85%;
-
+    margin: 1.5rem 0;
 }
 section.projects>div:nth-child(even) div {
     /* position: absolute;
@@ -742,46 +749,25 @@ section.projects>div:nth-child(even) div {
     margin-left: 50%;
 } 
 section.projects>div:nth-child(odd) h3 { 
-    /* text-transform: uppercase; */
-    margin: 2.5rem 0 2.5rem 3rem;
-    /* border-bottom: 1px solid white;
-    font-family: 'Saira', 
-    sans-serif; 
-    font-weight: 400;
-    font-size: 1.8rem; */
-    padding: 0.5rem 2.5rem 1rem 0;
-    /* letter-spacing: 1px; */
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-    text-align: left;
+    padding: 0.5rem 2rem .5rem 0;
+    text-align: right;
     float:right;
  }
 
- section.projects>div:nth-child(odd) h3 { 
-     text-align: right;
-     padding: 0.5rem 0 1rem 0 2.5rem;
+ section.projects>div:nth-child(even) h3 { 
+     text-align: left;
+     padding: 0.5rem 0 .5rem 2rem;
  }
 
-section.projects div p {
+section.projects>div:nth-child(even) p {
     font-size: 1rem; 
+    padding: 0 2rem 4rem 2rem;
+    float: left;
 }
 section.projects>div:nth-child(odd) p {
-    font-family: 'Saira', 
-    sans-serif; 
-    font-weight: 400;
-    /* font-size: 1.2rem; */
     text-align: right;
-    padding: 0 2.5rem 3rem 2.5rem;
+    float: right;
 }
-
-/* section.motto h2 {
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 1.5em 0;
-    font-size: 24px;
-} */
 
 section.motto p:nth-child(2) {
     /* font-family: 'Saira', sans-serif;
@@ -790,20 +776,6 @@ section.motto p:nth-child(2) {
     line-height: 2rem;
     margin: 40px 10% 20px;
 }
-/* section.motto p:nth-child(3) {
-    font-family: 'Saira', sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-} */
-
-/* 
-section.hobby h2 {
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1.5em 0;
-} */
 
 section.hobby div {
     /* position: relative;
@@ -823,10 +795,7 @@ section.hobby img {
     width: 100%;
 }
 
-/* section.hobby img:hover {
-    opacity: 0.5;
-    backdrop-filter: blur(100px);
-} */
+
 section.hobby p {
     /* position: absolute;
     left: 10%;
