@@ -91,7 +91,7 @@ section.about {
     color: black;
     text-align: center;
     padding: 15vw;
-    /* margin:15vw auto; */
+    margin:15vw auto;
 }
 section.about div {
     padding: 15px 0;
@@ -601,12 +601,13 @@ section.about {
     padding: 30px 5%;
     overflow: hidden;
     margin: 40px auto;
+    font-size: 0;
 }
 section.about div {
     /* padding: 15px 0; */
     float: left;
-    max-width: 30vw;
-    padding: 0 15px;
+    max-width: 33%; /* to not go to next line */
+    padding: 0 5%; /* to not go to next line */
 }
 section.about div:last-child::after {
     content: "";
