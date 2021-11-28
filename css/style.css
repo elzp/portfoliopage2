@@ -74,14 +74,13 @@ header img {
     position: absolute; 
     bottom:0;
     right: 0;
-    
 }
 
 section.about {
     color: black;
     text-align: center;
     padding: 15vw;
-    margin:15vw auto;
+    /* margin:15vw auto; */
 }
 section.about div {
     padding: 15px 0;
@@ -298,12 +297,12 @@ div.socials {
     background-color:  #111;
     height:fit-content;
     overflow: hidden;
-    padding-bottom: 20px;
+    padding: 0 10vw 20px;
     /* width:100vw; */
     
 }
 div.socials div {
-    padding: 15px 40px;
+    padding: 15px 0 15px 25vw;
 }
 div.socials img {
     width: 36px;
@@ -323,6 +322,7 @@ div.socials p {
     font-size: 14px;
     color: white;
     line-height: 36px;
+    display:inline;
 }
 div.socials p::after {
     clear: both;
@@ -338,6 +338,12 @@ footer {
     color: black;
     text-align: center;
     line-height: 4em;
+}
+
+@media screen and (max-width: 500px){
+    div.socials div {
+        padding: 15px 0 15px 15svw;
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -665,8 +671,10 @@ section.contact {
     sans-serif;
     font-weight: 300;
     padding-top: 30px; */
-    height: max-content;
+    height:aut;
+    padding-bottom: 25px;
     font-size: 0;
+    overflow: hidden;
 }
 
 section.contact h2 {
@@ -683,12 +691,12 @@ section.contact h2 {
 div.form {
     /* font-size: 1.2em;
     margin-bottom: 20px; */
-    margin: 2px 5% 20px 25%;
+    margin: 2px 5% 20px 15%;
     /* margin-left: 25%;
     margin-right: 5%;
     margin-top:2px; */
-    width:25%;
-    height: max-content;
+    width:35%;
+    /* height: max-content; */
     float: left;
 }
 
@@ -738,10 +746,11 @@ div.socials {
     padding-bottom: 20px; */
     /* width:100vw; */
     margin: 0 20% 0 5%;
+    padding: 0 0 20px 0;
     width:30%;
 }
 div.socials div {
-    /* padding: 15px 40px; */
+    padding: 15px 0 15px 25vw;
     padding: 0 0 4%;
 }
 /* div.socials img {
