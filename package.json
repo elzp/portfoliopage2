@@ -1,0 +1,14 @@
+{
+  "name": "Elzbieta",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "index.js",
+  "repository": "https://github.com/elzp/portfoliopage2.git",
+  "author": "elzp <piechelzbieta@wp.pl>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
