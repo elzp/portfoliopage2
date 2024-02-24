@@ -135,6 +135,10 @@ section.projects {
     background-color:#1e1e1e;
     padding-bottom: 10px;
 }
+
+section.projects div {
+    height: max-content;
+}
 section.projects h2{
 font-family: 'Saira Condensed', sans-serif;
     font-weight: 700;
@@ -801,22 +805,6 @@ section.hobby img {
     /* display: block; */
     width: 100%;
 }
-
-
-section.hobby p {
-    /* position: absolute;
-    left: 10%;
-    right: 10%;
-    bottom: 45%;
-    z-index: 1;
-    text-align: center;
-    font-family: 'Saira', sans-serif;
-    font-weight: 300; */
-    font-size: 4rem;
-    /* color: white; */
-}
-
-
 
 section.contact {
     /* background-color: #111;
