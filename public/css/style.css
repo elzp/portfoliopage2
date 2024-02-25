@@ -18,6 +18,9 @@ body {
 a {
     text-decoration: none;
 }
+span {
+    color: red;
+}
 header {
     background-color: #29a6dc;
     text-transform: uppercase;
@@ -268,6 +271,22 @@ section.contact h2 {
     font-size: 24px;
     margin-bottom: 25px;
 }
+
+.rodo {
+    color: white;
+    font-size: 10px;
+    width: 90%;
+    margin: 8px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#rodo {
+    width: min-content;
+    margin: 0 15px 15px;
+    padding: 0;
+}
+
 div.form {
     font-size: 1.2em;
     margin-bottom: 20px;
